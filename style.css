@@ -1,0 +1,90 @@
+/* Fresh, modern color scheme and new fonts */
+
+body, .stApp {
+    background: linear-gradient(135deg, #e7eaee 0%, #d6d9de 100%);
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+    color: #1e293b;
+    box-sizing: border-box;
+    border-left: 12px solid #2563eb;
+    border-right: 12px solid #2563eb;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, .stHeader, .stTitle {
+    color: #2563eb;
+    font-family: 'Poppins', 'Lato', 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px #e9ecf3;
+}
+
+.stButton > button {
+    background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    padding: 0.6em 1.5em;
+    transition: background 0.2s;
+    font-family: 'Poppins', 'Lato', Arial, sans-serif;
+    font-size: 1.08em;
+    box-shadow: 0 2px 8px #2563eb22;
+}
+.stButton > button:hover {
+    background: linear-gradient(90deg, #60a5fa 0%, #2563eb 100%);
+    filter: brightness(1.07);
+}
+
+.stTextInput > div > input, .stTextArea > div > textarea {
+    border: 2.5px solid #2563eb;
+    border-radius: 8px;
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.08em;
+    background: #fff;
+    color: #1e293b;
+    box-shadow: 0 4px 16px #2563eb14;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.stTextInput > div > input:focus, .stTextArea > div > textarea:focus {
+    border-color: #60a5fa;
+    background: #f3f6fa;
+    box-shadow: 0 0 0 3px #60a5fa44;
+}
+.stTextInput > div > input:focus, .stTextArea > div > textarea:focus {
+    border-color: #60a5fa;
+    background: #f3f6fa;
+    box-shadow: 0 0 0 3px #60a5fa44;
+}
+
+.stSelectbox, .stMultiSelect {
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+    background: #f6f9fd;
+    color: #1e293b;
+}
+
+.stInfo, .stSuccess, .stError {
+    border-radius: 8px;
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+    background: #f6f9fd !important;
+    color: #2563eb !important;
+    border-left: 6px solid #2563eb;
+}
+
+.stMarkdown, .stMarkdown p {
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+    color: #1e293b;
+}
+
+/* Blue accent bar at the top */
+.stApp::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 8px;
+    background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
