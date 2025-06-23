@@ -5,3 +5,4 @@ openai
 beautifulsoup4
 requests
 langchain_community
+pypdf
