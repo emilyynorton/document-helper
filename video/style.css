@@ -1,0 +1,21 @@
+body, .stApp {
+    background: linear-gradient(135deg, #e7eaee 0%, #d6d9de 100%);
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+    color: #1e293b;
+    box-sizing: border-box;
+    border-left: 12px solid #2563eb;
+    border-right: 12px solid #2563eb;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, .stHeader, .stTitle {
+    color: #2563eb;
+    font-family: 'Poppins', 'Lato', 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px #e9ecf3;
+}
+
+.stButton > button {
+    background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+}

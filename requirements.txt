@@ -1,8 +1,13 @@
+# requirements for both PDF reader and Video-to-Notes features
 streamlit
 langchain
+langchain-community
+langchain-openai
 faiss-cpu
-openai
+openai>=1.0.0
 beautifulsoup4
 requests
-langchain_community
 pypdf
+yt-dlp
+git+https://github.com/openai/whisper.git
+torch
