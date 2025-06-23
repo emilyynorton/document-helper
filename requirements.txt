@@ -4,3 +4,4 @@ faiss-cpu
 openai
 beautifulsoup4
 requests
+langchain_community
