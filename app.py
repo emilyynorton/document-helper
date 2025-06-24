@@ -10,9 +10,6 @@ for d in dirs:
     if d not in sys.path:
         sys.path.insert(0, d)
 
-import pdf
-import video
-
 st.set_page_config(page_title="Unified Workspace", layout="wide")
 
 st.sidebar.title("Workspace")
