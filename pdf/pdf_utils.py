@@ -120,5 +120,13 @@ if len(doc_names) > 1:
         combined_vectorstore = FAISS.from_documents(combined_chunks, embeddings)
         combined_retriever = combined_vectorstore.as_retriever()
         combined_qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=combined_retriever)
-        response = combined_qa_chain.run(compare_question)
+        doc_list_str = ", ".join(selected_docs)
+        system_instruction = (
+            "You are an expert at comparing and constrasting documents. "
+            f"The user has selected the following documents to compare: {doc_list_str}\n\n"
+            "Please answer the user's question to the best of your ability.\n"
+            "If you cannot answer, please politely tell the user that you are confused by their intention and ask them to rephrase the question.\n"
+        )
+        full_prompt = system_instruction + compare_question
+        response = combined_qa_chain.run(full_prompt)
         st.write(f"**Compare/Contrast Answer:**", response)
