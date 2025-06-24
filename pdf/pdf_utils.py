@@ -28,6 +28,7 @@ st.write("""
 ### Instructions
 - Upload the PDFs and copy/paste website URL's that you would like to analyze
 - A summary will be generated for each source, then you can ask questions
+- You can also generate a quiz based on the uploaded material to test your understanding
 """)
 
 uploaded_files = st.file_uploader("Upload PDF document(s)", type="pdf", accept_multiple_files=True)

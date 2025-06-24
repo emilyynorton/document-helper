@@ -7,6 +7,7 @@ from openai import OpenAI
 # --- UI ---
 st.title("YouTube Video Note-Taker")
 st.write("Enter a YouTube video link, and get clean, structured notes.")
+st.write("After reviewing the notes, you can generate a quiz to test your understanding of the video.")
 st.markdown("""
 **If you encounter a 'Sign in to confirm you’re not a bot' error, please upload your YouTube cookies.txt file exported from your browser using the [Get cookies.txt](https://chrome.google.com/webstore/detail/get-cookiestxt/) extension.**
 """)
