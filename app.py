@@ -1,3 +1,7 @@
+import os
+# Set environment variable to avoid OpenMP runtime conflicts
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
+
 import streamlit as st
 import sys
 import pdf
@@ -10,7 +14,7 @@ for d in dirs:
     if d not in sys.path:
         sys.path.insert(0, d)
 
-st.set_page_config(page_title="Unified Workspace", layout="wide")
+st.set_page_config(page_title="Workspace", layout="wide")
 
 st.sidebar.title("Workspace")
 page = st.sidebar.radio("Go to", ("PDF Reader", "Video to Notes"))
